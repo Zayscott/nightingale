@@ -1,0 +1,9 @@
+stages:
+- name: push
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./dockerfiles/n9e/Dockerfile
+      buildContext: .
+      tag: nightingale:3.8
+timeout: 60
+notification: {}
