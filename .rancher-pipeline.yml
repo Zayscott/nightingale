@@ -1,0 +1,9 @@
+stages:
+- name: build
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./dockerfiles/n9e/Dockerfile
+      buildContext: .
+      tag: n9e:3.8.0
+timeout: 60
+notification: {}
